@@ -1,3 +1,5 @@
+# These tests fit models with other frameworks; they run locally and on CI.
+
 noisy_iris <- function() {
   data <- datasets::iris
   flipped <- c(5L, 30L, 60L, 80L, 110L, 140L)
@@ -12,6 +14,7 @@ expect_finds_flips <- function(issues, flipped) {
 }
 
 test_that("tune resampling results are accepted", {
+  skip_on_cran()
   skip_if_not_installed(c("tune", "parsnip", "rsample", "workflows", "nnet"))
   iris_noisy <- noisy_iris()
   wf <- workflows::workflow(
@@ -33,6 +36,7 @@ test_that("tune resampling results are accepted", {
 })
 
 test_that("tune_results with several candidates need parameters", {
+  skip_on_cran()
   skip_if_not_installed(c("tune", "parsnip", "rsample", "workflows", "nnet"))
   iris_noisy <- noisy_iris()
   wf <- workflows::workflow(
@@ -53,6 +57,7 @@ test_that("tune_results with several candidates need parameters", {
 })
 
 test_that("bootstrap resamples that miss rows are rejected", {
+  skip_on_cran()
   skip_if_not_installed(c("tune", "parsnip", "rsample", "workflows", "nnet"))
   iris_noisy <- noisy_iris()
   wf <- workflows::workflow(
@@ -66,6 +71,7 @@ test_that("bootstrap resamples that miss rows are rejected", {
 })
 
 test_that("mlr3 predictions and resample results are accepted", {
+  skip_on_cran()
   skip_if_not_installed("mlr3")
   logger <- lgr::get_logger("mlr3")
   old_threshold <- logger$threshold
@@ -87,6 +93,7 @@ test_that("mlr3 predictions and resample results are accepted", {
 })
 
 test_that("caret train objects are accepted", {
+  skip_on_cran()
   skip_if_not_installed(c("caret", "nnet"))
   iris_noisy <- noisy_iris()
   set.seed(1)

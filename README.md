@@ -18,7 +18,13 @@ It implements *confident learning* (Northcutt, Jiang and Chuang, 2021):
 
 ## Installation
 
-The development version from GitHub:
+Install the released version from CRAN:
+
+``` r
+install.packages("labelnoise")
+```
+
+Or the development version from GitHub:
 
 ``` r
 # install.packages("remotes")
