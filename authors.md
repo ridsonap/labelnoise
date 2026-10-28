@@ -12,12 +12,12 @@ Source:
 
 Al Farizal P R (2026). *labelnoise: Find Label Errors in Classification
 Data with Confident Learning*. R package version 0.1.0,
-<https://ridsonap.github.io/labelnoise/>.
+<https://ridsonap.is-a.dev/labelnoise/>.
 
     @Manual{,
       title = {labelnoise: Find Label Errors in Classification Data with Confident Learning},
       author = {Ridson {Al Farizal P}},
       year = {2026},
       note = {R package version 0.1.0},
-      url = {https://ridsonap.github.io/labelnoise/},
+      url = {https://ridsonap.is-a.dev/labelnoise/},
     }

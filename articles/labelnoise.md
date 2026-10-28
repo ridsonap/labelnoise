@@ -24,7 +24,7 @@ library(labelnoise)
 
 ## A first look with simulated data
 
-[`simulate_label_noise()`](https://ridsonap.github.io/labelnoise/reference/simulate_label_noise.md)
+[`simulate_label_noise()`](https://ridsonap.is-a.dev/labelnoise/reference/simulate_label_noise.md)
 creates a dataset where we know which labels are wrong. It returns
 predictions in the yardstick convention: a label column and one
 `.pred_<class>` column per class.
@@ -49,7 +49,7 @@ sim
 #> # ℹ 990 more rows
 ```
 
-[`find_label_issues()`](https://ridsonap.github.io/labelnoise/reference/find_label_issues.md)
+[`find_label_issues()`](https://ridsonap.is-a.dev/labelnoise/reference/find_label_issues.md)
 returns one row per example:
 
 ``` r
@@ -147,7 +147,7 @@ automatically.
 
 ## Is the dataset healthy?
 
-[`health_summary()`](https://ridsonap.github.io/labelnoise/reference/health_summary.md)
+[`health_summary()`](https://ridsonap.is-a.dev/labelnoise/reference/health_summary.md)
 gives the overall picture: how many labels look wrong, which classes are
 affected most, and which pairs of classes get confused. Confused pairs
 often point to an unclear definition or coding guideline rather than to
@@ -182,15 +182,15 @@ health_summary(sim, truth = given)
 ```
 
 The underlying estimates are available separately:
-[`confident_joint()`](https://ridsonap.github.io/labelnoise/reference/confident_joint.md),
-[`estimate_joint()`](https://ridsonap.github.io/labelnoise/reference/estimate_joint.md),
-[`noise_matrices()`](https://ridsonap.github.io/labelnoise/reference/noise_matrices.md)
+[`confident_joint()`](https://ridsonap.is-a.dev/labelnoise/reference/confident_joint.md),
+[`estimate_joint()`](https://ridsonap.is-a.dev/labelnoise/reference/estimate_joint.md),
+[`noise_matrices()`](https://ridsonap.is-a.dev/labelnoise/reference/noise_matrices.md)
 and
-[`num_label_issues()`](https://ridsonap.github.io/labelnoise/reference/num_label_issues.md).
+[`num_label_issues()`](https://ridsonap.is-a.dev/labelnoise/reference/num_label_issues.md).
 
 ## Choosing a rule
 
-[`find_label_issues()`](https://ridsonap.github.io/labelnoise/reference/find_label_issues.md)
+[`find_label_issues()`](https://ridsonap.is-a.dev/labelnoise/reference/find_label_issues.md)
 implements the five rank-and-prune rules of the paper through
 `filter_by`. The default, `"prune_by_noise_rate"`, flags in each cell of
 the estimated joint distribution the examples with the largest margin
@@ -288,7 +288,7 @@ not a port of the Python package
 [cleanlab](https://github.com/cleanlab/cleanlab). Its test suite
 compares results with cleanlab 2.9.0 on simulated data: the confident
 joint, the five filtering rules,
-[`num_label_issues()`](https://ridsonap.github.io/labelnoise/reference/num_label_issues.md)
+[`num_label_issues()`](https://ridsonap.is-a.dev/labelnoise/reference/num_label_issues.md)
 and the self-confidence and normalised-margin scores agree exactly. The
 calibrated joint differs only by cleanlab’s rounding to whole counts,
 and the confidence-weighted entropy uses a different map to `[0, 1]`

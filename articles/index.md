@@ -3,4 +3,4 @@
 ### All vignettes
 
 - [Finding label errors with
-  labelnoise](https://ridsonap.github.io/labelnoise/articles/labelnoise.md):
+  labelnoise](https://ridsonap.is-a.dev/labelnoise/articles/labelnoise.md):

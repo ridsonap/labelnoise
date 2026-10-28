@@ -21,7 +21,7 @@ class_thresholds(x, ...)
 - ...:
 
   Passed to
-  [`label_inputs()`](https://ridsonap.github.io/labelnoise/reference/label_inputs.md):
+  [`label_inputs()`](https://ridsonap.is-a.dev/labelnoise/reference/label_inputs.md):
   for example `pred_probs` when `x` is a label vector, or `truth` when
   `x` is a data frame.
 

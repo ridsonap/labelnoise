@@ -18,7 +18,7 @@ Mueller, 2022):
   classes, such as examples that belong to none of the classes.
 
 With `adjust = TRUE`, each class threshold `t` (see
-[`class_thresholds()`](https://ridsonap.github.io/labelnoise/reference/class_thresholds.md))
+[`class_thresholds()`](https://ridsonap.is-a.dev/labelnoise/reference/class_thresholds.md))
 is subtracted from the predicted probabilities before scoring. This
 corrects for a classifier that systematically favours some classes. The
 adjusted probabilities are `(p - t + max(t)) / sum(p - t + max(t))`,
@@ -45,7 +45,7 @@ label_quality_scores(
 - ...:
 
   Passed to
-  [`label_inputs()`](https://ridsonap.github.io/labelnoise/reference/label_inputs.md):
+  [`label_inputs()`](https://ridsonap.is-a.dev/labelnoise/reference/label_inputs.md):
   for example `pred_probs` when `x` is a label vector, or `truth` when
   `x` is a data frame.
 

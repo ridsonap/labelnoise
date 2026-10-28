@@ -1,7 +1,7 @@
 # Noise transition matrices and class priors
 
 Derives from the estimated joint (see
-[`estimate_joint()`](https://ridsonap.github.io/labelnoise/reference/estimate_joint.md))
+[`estimate_joint()`](https://ridsonap.is-a.dev/labelnoise/reference/estimate_joint.md))
 the quantities used to characterise label noise (Northcutt et al., 2021,
 Sec. 3.1). Both matrices are oriented with given labels in rows and true
 labels in columns.
@@ -22,7 +22,7 @@ noise_matrices(x, ...)
 - ...:
 
   Passed to
-  [`label_inputs()`](https://ridsonap.github.io/labelnoise/reference/label_inputs.md):
+  [`label_inputs()`](https://ridsonap.is-a.dev/labelnoise/reference/label_inputs.md):
   for example `pred_probs` when `x` is a label vector, or `truth` when
   `x` is a data frame.
 

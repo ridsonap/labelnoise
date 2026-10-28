@@ -2,7 +2,7 @@
 
 Gives a dataset-level and class-level overview of label quality from the
 estimated joint distribution of given and true labels (see
-[`noise_matrices()`](https://ridsonap.github.io/labelnoise/reference/noise_matrices.md)):
+[`noise_matrices()`](https://ridsonap.is-a.dev/labelnoise/reference/noise_matrices.md)):
 
 - an overall label health score, one minus the estimated share of
   mislabelled examples;
@@ -29,14 +29,14 @@ health_summary(x, ..., method = c("confident_joint", "calibrated"))
 - ...:
 
   Passed to
-  [`label_inputs()`](https://ridsonap.github.io/labelnoise/reference/label_inputs.md):
+  [`label_inputs()`](https://ridsonap.is-a.dev/labelnoise/reference/label_inputs.md):
   for example `pred_probs` when `x` is a label vector, or `truth` when
   `x` is a data frame.
 
 - method:
 
   Estimator of the number of label errors, see
-  [`num_label_issues()`](https://ridsonap.github.io/labelnoise/reference/num_label_issues.md).
+  [`num_label_issues()`](https://ridsonap.is-a.dev/labelnoise/reference/num_label_issues.md).
 
 ## Value
 

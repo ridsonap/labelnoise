@@ -76,7 +76,7 @@
 <h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
 </h2>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ridsonap.github.io/labelnoise/">labelnoise</a></span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ridsonap.is-a.dev/labelnoise/">labelnoise</a></span><span class="op">)</span></span>
 <span></span>
 <span><span class="co"># Simulated data with known errors, in the yardstick convention</span></span>
 <span><span class="va">sim</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/simulate_label_noise.html">simulate_label_noise</a></span><span class="op">(</span>n <span class="op">=</span> <span class="fl">1000</span>, noise_rate <span class="op">=</span> <span class="fl">0.1</span>, signal <span class="op">=</span> <span class="fl">3</span>, seed <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span>
@@ -86,7 +86,7 @@
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">flagged</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/order.html" class="external-link">order</a></span><span class="op">(</span><span class="va">flagged</span><span class="op">$</span><span class="va">label_quality</span><span class="op">)</span>, <span class="op">]</span><span class="op">)</span></span>
 <span></span>
 <span><span class="fu"><a href="reference/health_summary.html">health_summary</a></span><span class="op">(</span><span class="va">sim</span>, truth <span class="op">=</span> <span class="va">given</span><span class="op">)</span></span></code></pre></div>
-<p>See the <a href="https://ridsonap.github.io/labelnoise/">documentation site</a> for the full reference and the introductory vignette.</p>
+<p>See the <a href="https://ridsonap.is-a.dev/labelnoise/">documentation site</a> for the full reference and the introductory vignette.</p>
 </div>
 <div class="section level2">
 <h2 id="works-with-your-modelling-framework">Works with your modelling framework<a class="anchor" aria-label="anchor" href="#works-with-your-modelling-framework"></a>

@@ -6,7 +6,7 @@ Two estimators are available:
   cells of the uncalibrated confident joint, that is examples that are
   confident members of a class other than their given label, leaving out
   those whose most likely class is still their given label. This matches
-  [`find_label_issues()`](https://ridsonap.github.io/labelnoise/reference/find_label_issues.md)
+  [`find_label_issues()`](https://ridsonap.is-a.dev/labelnoise/reference/find_label_issues.md)
   with `filter_by = "confident_learning"`.
 
 - `"calibrated"` multiplies the off-diagonal mass of the estimated joint
@@ -30,7 +30,7 @@ num_label_issues(x, ..., method = c("confident_joint", "calibrated"))
 - ...:
 
   Passed to
-  [`label_inputs()`](https://ridsonap.github.io/labelnoise/reference/label_inputs.md):
+  [`label_inputs()`](https://ridsonap.is-a.dev/labelnoise/reference/label_inputs.md):
   for example `pred_probs` when `x` is a label vector, or `truth` when
   `x` is a data frame.
 

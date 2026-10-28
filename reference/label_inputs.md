@@ -84,7 +84,7 @@ label_inputs(x, ...)
 - row_id:
 
   Integer identifiers returned in the `.row` column of
-  [`find_label_issues()`](https://ridsonap.github.io/labelnoise/reference/find_label_issues.md).
+  [`find_label_issues()`](https://ridsonap.is-a.dev/labelnoise/reference/find_label_issues.md).
   Defaults to `seq_along(x)`.
 
 - truth:

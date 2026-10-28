@@ -8,7 +8,7 @@ example from cross-validation.
 - `"prune_by_noise_rate"` (default): for every pair of given label `i`
   and true label `j`, the estimated number of examples in that cell of
   the joint (see
-  [`estimate_joint()`](https://ridsonap.github.io/labelnoise/reference/estimate_joint.md))
+  [`estimate_joint()`](https://ridsonap.is-a.dev/labelnoise/reference/estimate_joint.md))
   is flagged among the examples labelled `i`, choosing those where
   `p[j] - p[i]` is largest.
 
@@ -20,7 +20,7 @@ example from cross-validation.
 
 - `"confident_learning"`: examples in the off-diagonal cells of the
   confident joint (see
-  [`confident_joint()`](https://ridsonap.github.io/labelnoise/reference/confident_joint.md)).
+  [`confident_joint()`](https://ridsonap.is-a.dev/labelnoise/reference/confident_joint.md)).
 
 - `"predicted_neq_given"`: examples whose most likely class differs from
   the given label. A simple baseline that ignores class imbalance.
@@ -56,7 +56,7 @@ find_label_issues(
 - ...:
 
   Passed to
-  [`label_inputs()`](https://ridsonap.github.io/labelnoise/reference/label_inputs.md):
+  [`label_inputs()`](https://ridsonap.is-a.dev/labelnoise/reference/label_inputs.md):
   for example `pred_probs` when `x` is a label vector, or `truth` when
   `x` is a data frame.
 
@@ -67,7 +67,7 @@ find_label_issues(
 - rank_by:
 
   Label quality score reported in `label_quality`, see
-  [`label_quality_scores()`](https://ridsonap.github.io/labelnoise/reference/label_quality_scores.md).
+  [`label_quality_scores()`](https://ridsonap.is-a.dev/labelnoise/reference/label_quality_scores.md).
   Sort by it to review the most suspicious examples first.
 
 - frac_noise:
@@ -106,7 +106,7 @@ Intelligence Research*, 70, 1373–1411.
 
 ## See also
 
-[`health_summary()`](https://ridsonap.github.io/labelnoise/reference/health_summary.md)
+[`health_summary()`](https://ridsonap.is-a.dev/labelnoise/reference/health_summary.md)
 for a class-level overview.
 
 ## Examples
