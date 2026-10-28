@@ -32,6 +32,7 @@ Imports:
 Suggests:
     caret,
     knitr,
+    lgr,
     mlr3,
     nnet,
     parsnip,

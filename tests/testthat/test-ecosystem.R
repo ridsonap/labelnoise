@@ -72,7 +72,7 @@ test_that("bootstrap resamples that miss rows are rejected", {
 
 test_that("mlr3 predictions and resample results are accepted", {
   skip_on_cran()
-  skip_if_not_installed("mlr3")
+  skip_if_not_installed(c("mlr3", "lgr"))
   logger <- lgr::get_logger("mlr3")
   old_threshold <- logger$threshold
   logger$set_threshold("warn")
