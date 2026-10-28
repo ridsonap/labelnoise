@@ -1,5 +1,9 @@
 # labelnoise
 
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/ridsonap/labelnoise/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ridsonap/labelnoise/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
+
 labelnoise finds examples in classification data whose given label is
 probably wrong. It works with any classifier: all it needs are the labels
 and out-of-sample predicted probabilities, for example from
@@ -45,6 +49,9 @@ head(flagged[order(flagged$label_quality), ])
 
 health_summary(sim, truth = given)
 ```
+
+See the [documentation site](https://ridsonap.github.io/labelnoise/) for
+the full reference and the introductory vignette.
 
 ## Works with your modelling framework
 

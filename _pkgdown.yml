@@ -1,0 +1,31 @@
+url: https://ridsonap.github.io/labelnoise/
+
+template:
+  bootstrap: 5
+
+reference:
+- title: Find label issues
+  contents:
+  - find_label_issues
+  - label_quality_scores
+  - health_summary
+- title: Confident learning estimates
+  desc: >
+    The quantities behind the label issues: per-class thresholds, the
+    confident joint, the estimated joint distribution of given and true
+    labels, and the noise transition matrices.
+  contents:
+  - class_thresholds
+  - confident_joint
+  - estimate_joint
+  - noise_matrices
+  - num_label_issues
+- title: Inputs
+  contents:
+  - label_inputs
+- title: Simulation
+  contents:
+  - simulate_label_noise
+- title: internal
+  contents:
+  - labelnoise-package
