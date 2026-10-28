@@ -16,7 +16,7 @@ Description: Finds examples whose given class label is likely wrong, using
     a probability matrix, a data frame of predictions, resampling results
     from 'tune', predictions from 'mlr3', or a fitted 'caret' model.
 License: MIT + file LICENSE
-URL: https://ridsonap.github.io/labelnoise/,
+URL: https://ridsonap.is-a.dev/labelnoise/,
     https://github.com/ridsonap/labelnoise
 BugReports: https://github.com/ridsonap/labelnoise/issues
 Encoding: UTF-8

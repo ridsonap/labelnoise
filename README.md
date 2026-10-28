@@ -50,7 +50,7 @@ head(flagged[order(flagged$label_quality), ])
 health_summary(sim, truth = given)
 ```
 
-See the [documentation site](https://ridsonap.github.io/labelnoise/) for
+See the [documentation site](https://ridsonap.is-a.dev/labelnoise/) for
 the full reference and the introductory vignette.
 
 ## Works with your modelling framework
