@@ -11,6 +11,8 @@ This is the first submission of labelnoise.
 ## Test environments
 
 * local macOS (aarch64), R 4.6.1
+* GitHub Actions: macOS (release), Windows (release), Ubuntu (devel,
+  release, oldrel-1)
 
 ## Method references
 
