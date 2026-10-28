@@ -8,12 +8,20 @@
 \description{
 Finds examples whose given class label is likely wrong, using out-of-sample predicted probabilities from any classifier. Implements confident learning (Northcutt, Jiang and Chuang, 2021) \doi{10.1613/jair.1.12125}: per-class confidence thresholds, the confident joint, calibrated estimates of the joint distribution of given and true labels, noise transition matrices, and five rank-and-prune rules for flagging label issues. Also provides model-agnostic label quality scores (Kuan and Mueller, 2022) \doi{10.5281/zenodo.18168246} and a per-class label health summary. Inputs can be a label vector with a probability matrix, a data frame of predictions, resampling results from 'tune', predictions from 'mlr3', or a fitted 'caret' model.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/ridsonap/labelnoise}
+  \item Report bugs at \url{https://github.com/ridsonap/labelnoise/issues}
+}
+
+}
 \author{
-\strong{Maintainer}: Ridson Al Farizal P \email{alfrzlp@gmail.com} (\href{https://orcid.org/0000-0003-0617-0214}{ORCID}) [copyright holder]
+\strong{Maintainer}: Ridson Al Farizal P \email{ridsonalfarizal15@gmail.com} (\href{https://orcid.org/0000-0003-0617-0214}{ORCID}) [copyright holder]
 
 Authors:
 \itemize{
-  \item Ridson Al Farizal P \email{alfrzlp@gmail.com} (\href{https://orcid.org/0000-0003-0617-0214}{ORCID}) [copyright holder]
+  \item Ridson Al Farizal P \email{ridsonalfarizal15@gmail.com} (\href{https://orcid.org/0000-0003-0617-0214}{ORCID}) [copyright holder]
 }
 
 }

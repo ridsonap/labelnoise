@@ -2,7 +2,7 @@ Package: labelnoise
 Title: Find Label Errors in Classification Data with Confident Learning
 Version: 0.1.0
 Authors@R:
-    person("Ridson", "Al Farizal P", , "alfrzlp@gmail.com", role = c("aut", "cre", "cph"),
+    person("Ridson", "Al Farizal P", , "ridsonalfarizal15@gmail.com", role = c("aut", "cre", "cph"),
            comment = c(ORCID = "0000-0003-0617-0214"))
 Description: Finds examples whose given class label is likely wrong, using
     out-of-sample predicted probabilities from any classifier. Implements
